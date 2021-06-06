@@ -9,7 +9,7 @@ const SocialFooter = () => {
           <i class='fab fa-linkedin-in' />
           <i class='fas fa-envelope' />
           <i class='fab fa-whatsapp' />
-          <i class='fab fa-github' />
+          <i class='fab fa-github ' />
         </div>
       </div>
       <div className='trademark'>

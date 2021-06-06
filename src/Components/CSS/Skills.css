@@ -217,12 +217,12 @@
   background: #1976d2;
 }
 
-.social fa-github {
+.social .fa-github {
   color: #a9adb3;
   border: #a9adb3 2.5px solid;
 }
 
-.social fa-github:hover {
+.social .fa-github:hover {
   color: white;
   background: #a9adb3;
 }
