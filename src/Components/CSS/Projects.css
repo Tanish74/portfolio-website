@@ -1,0 +1,206 @@
+.projects {
+  color: white;
+  height: auto;
+  user-select: none;
+}
+
+.background {
+  position: relative;
+  height: 100vh;
+  user-select: none;
+}
+
+.background .bg {
+  position: absolute;
+  font-size: 5.5rem;
+  top: 40%;
+  left: 30%;
+  transform: translate(-40%, -30%);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #343538;
+}
+
+.background .fg {
+  position: absolute;
+  font-size: 5.5rem;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -40%);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.works {
+  height: 100vh;
+  background-color: var(--color-BG);
+}
+
+.project-container {
+  height: 100%;
+
+  position: relative;
+}
+
+.project-details {
+  height: 100%;
+  width: 90%;
+  position: absolute;
+}
+
+.project-image {
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.project-image .overlay {
+  height: 90%;
+  margin: auto;
+}
+
+.project-image .overlay img {
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.6);
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.3;
+  border-radius: 10px;
+  transition: all ease-in-out 0.5s;
+}
+
+.overlay:hover::after {
+  opacity: 0.1;
+}
+
+.description p {
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.project-desc {
+  height: 300px;
+  width: 450px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -30%);
+  color: black;
+  padding: 5px;
+  background-color: white;
+  opacity: 0.6;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all ease-in 0.5s;
+}
+
+.project-desc:hover {
+  opacity: 1;
+}
+
+.project-title {
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  font-size: 6rem;
+  font-family: "Kaushan script", cursive;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+  user-select: none;
+}
+
+.project-links a {
+  color: black;
+}
+
+/* Contact */
+.contact {
+  height: 100vh;
+}
+
+.contact-bg {
+  position: relative;
+  height: 100%;
+}
+
+.title-text {
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "poppins", sans-serif;
+  color: #343538;
+}
+
+.page-title {
+  position: absolute;
+  height: auto;
+  user-select: none;
+  top: 16%;
+  left: 0;
+}
+
+.contact-form {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+}
+
+.form {
+  height: 70%;
+  width: 90%;
+  background-color: var(--color-BG);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.design {
+  height: 40%;
+  position: absolute;
+  background-color: #343538;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Mobile Version */
+@media (max-width: 420px) {
+  /* Projects-page */
+  .background .bg,
+  .background .fg {
+    font-size: 2rem;
+  }
+  .background .bg {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  .background .fg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

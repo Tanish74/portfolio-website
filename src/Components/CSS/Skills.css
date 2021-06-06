@@ -1,0 +1,316 @@
+.skills {
+  height: 120vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.skillsBG {
+  position: absolute;
+  top: 5%;
+  right: 7.5%;
+  height: 140px;
+  user-select: none;
+}
+
+.skillsBG .bg {
+  font-size: 8.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #343538;
+}
+
+.skills-container {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.skill-bar {
+  height: 100px;
+  width: 100%;
+}
+
+.skill-title {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Padauk", sans-serif;
+}
+
+.skill-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress-bar {
+  height: 17.5px;
+  width: 0;
+  animation: load 3s normal forwards;
+}
+
+.bar-left {
+  background: linear-gradient(to right, var(--color-G1-L), var(--color-G1-R));
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.bar-right {
+  background: linear-gradient(to right, var(--color-G2-L), var(--color-G2-R));
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 10px;
+}
+
+.more-skills {
+  padding-top: 10px;
+  margin-top: 50px;
+  border-top: 3.5px white solid;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+/* Footer */
+
+.footer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url("../Images/FooterBG.png") center center/cover no-repeat black;
+  color: white;
+}
+
+.about-me {
+  height: 150px;
+}
+
+.about {
+  display: grid;
+  place-items: center;
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "satisfy", cursive;
+}
+
+.about h2 {
+  text-shadow: 0 0 22px white;
+}
+
+.footer-container {
+  height: auto;
+}
+
+.visiting-card {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 15px;
+  border: 10px solid white;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.profile-img {
+  height: 500px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-details {
+  height: 500px;
+  width: 60%;
+}
+
+.details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 500px;
+}
+
+.details h1 {
+  font-family: "satisfy", cursive;
+  font-size: 3.5rem;
+}
+
+.profile-pic {
+  height: 400px;
+  border-radius: 15px;
+}
+
+/* Social Footer */
+.social-footer {
+  color: white;
+  height: 150px;
+  background-color: black;
+}
+
+.social-icons {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+.social .fab {
+  display: grid;
+  place-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all ease-in 0.2s;
+}
+
+.social .fas {
+  display: grid;
+  place-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all ease-in 0.2s;
+}
+
+.fa-linkedin-in {
+  color: #1976d2;
+  border: #1976d2 2.5px solid;
+}
+
+.fa-linkedin-in:hover {
+  color: white;
+  background: #1976d2;
+}
+
+.social fa-github {
+  color: #a9adb3;
+  border: #a9adb3 2.5px solid;
+}
+
+.social fa-github:hover {
+  color: white;
+  background: #a9adb3;
+}
+
+.fa-envelope {
+  color: #ff4b4b;
+  border: #ff4b4b 2.5px solid;
+}
+
+.fa-envelope:hover {
+  color: white;
+  background: #ff4b4b;
+  transition: all ease-in 0.2s;
+}
+
+.fa-whatsapp {
+  color: #1ad03f;
+  border: #1ad03f 2.5px solid;
+}
+
+.fa-whatsapp:hover {
+  color: white;
+  background: #1ad03f;
+}
+
+.trademark {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Mobile Version */
+@media (max-width: 420px) {
+  /* Skills */
+  .skills {
+    height: 140vh;
+  }
+  .skillsBG {
+    height: 70px;
+    top: 0;
+  }
+  .skillsBG .bg {
+    font-size: 3rem;
+  }
+  .skill-title {
+    font-size: 1.3rem;
+  }
+  .progress-bar {
+    height: 7.5px;
+  }
+  .more-skills {
+    height: 200px;
+    flex-direction: column;
+  }
+  /* Footer */
+  .visiting-card {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .profile-img {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .profile-pic {
+    height: 200px;
+  }
+  .profile-details {
+    height: 200px;
+  }
+  .details {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .details h1 {
+    font-size: 1.5rem;
+  }
+  .details .lead {
+    height: 70px;
+    overflow: auto;
+  }
+}

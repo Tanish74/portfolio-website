@@ -1,0 +1,116 @@
+:root {
+  --color-BG: #151617;
+  --color-1: #9dacff;
+  --color-2: #76e5fc;
+  --color-3: #4bc0d9;
+  --color-4: #6457a6;
+  --color-5: #5c2751;
+  --color-G1-L: #c359ad;
+  --color-G1-R: #8977e9;
+  --color-G2-L: #6457a6;
+  --color-G2-R: #4bc0d9;
+}
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: small;
+  background-color: var(--color-BG);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.underline-1 {
+  height: 3.5px;
+  width: 400px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.underline-2 {
+  height: 3.5px;
+  width: 75px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.mtb-20 {
+  margin: 20px 0;
+}
+
+.mtb-10 {
+  margin: 10px 0;
+}
+
+.tools {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+::selection {
+  background-color: var(--color-1);
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+textarea {
+  resize: none;
+}
+
+.input-text {
+  height: 80px;
+  border: 2.5px white solid;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.input-text::placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+}
+
+.input-text:focus {
+  background-color: #333;
+  color: white;
+}
+
+button {
+  height: 60px;
+}

@@ -1,0 +1,233 @@
+.work {
+  height: auto;
+  padding: 10px 0;
+  margin: 30px 0;
+}
+
+.selectedWorksBG {
+  position: relative;
+  height: 250px;
+  user-select: none;
+}
+
+.selectedWorksBG .bg {
+  position: absolute;
+  font-size: 8.5rem;
+  top: 30%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #343538;
+}
+
+.selectedWorksBG .fg {
+  position: absolute;
+  font-size: 8rem;
+  top: 80%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.project {
+  height: 100%;
+}
+
+.project-1 {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.project-2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.carousel {
+  height: 400px;
+  width: 750px;
+  border: 10px solid;
+  position: relative;
+}
+
+.C-left {
+  border-image: linear-gradient(45deg, var(--color-G1-L), var(--color-G1-R)) 1;
+}
+
+.C-right {
+  border-image: linear-gradient(45deg, var(--color-G2-L), var(--color-G2-R)) 1;
+}
+
+.carousel:after {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.carousel:hover::after {
+  transition: all 1s;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.carousel img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-name {
+  display: flex;
+  color: white;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all ease-in 500ms;
+}
+
+.project-name h1 {
+  font-size: 3rem;
+  font-family: "Kaushan script", cursive;
+  margin-bottom: 20px;
+}
+
+.project-name h4 {
+  margin-top: 25px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-name:hover {
+  opacity: 1;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.icon-container {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  margin: 0 10px;
+  background-color: #242424;
+  color: #303030;
+  transition: ease-in-out all 0.5s;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #131415, #161819);
+  box-shadow: 6px 6px 9px #0b0b0c, -6px -6px 9px #1f2122;
+}
+.react:hover {
+  background: black;
+  border: none;
+  color: #5edef3;
+}
+.html:hover {
+  background: black;
+  border: none;
+  color: #e44d26;
+}
+.css:hover {
+  background: black;
+  border: none;
+  color: #139fda;
+}
+
+.more-projects {
+  position: relative;
+  height: 250px;
+  background: url("../Images/MoreProjects.png") center center/cover no-repeat;
+}
+
+.more-projects a {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+}
+
+.more-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.more-projects a:hover {
+  color: var(--color-2);
+  text-shadow: 0px 0px 10px var(--color-2);
+}
+
+/* Mobile Version */
+@media (max-width: 420px) {
+  /* Work */
+  .selectedWorksBG {
+    height: 100px;
+  }
+  .selectedWorksBG .bg,
+  .selectedWorksBG .fg {
+    font-size: 3rem;
+    left: 0;
+  }
+  .selectedWorksBG .bg {
+    top: 0px;
+  }
+  .selectedWorksBG .fg {
+    top: 45px;
+  }
+  .project-1,
+  .project-2 {
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+  }
+  .carousel {
+    height: 200px;
+    width: auto;
+    border: 5px solid;
+  }
+  .C-left {
+    border-image: linear-gradient(45deg, var(--color-G1-L), var(--color-G1-R)) 1;
+  }
+
+  .C-right {
+    border-image: linear-gradient(45deg, var(--color-G2-L), var(--color-G2-R)) 1;
+  }
+  .underline-1 {
+    width: 250px;
+  }
+  .more-projects {
+    height: 100px;
+  }
+  .more-projects a {
+    font-size: 1.75rem;
+  }
+}
