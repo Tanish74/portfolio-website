@@ -31,6 +31,10 @@ a {
   color: white;
 }
 
+.lead {
+  text-transform: capitalize;
+}
+
 .underline-1 {
   height: 3.5px;
   width: 400px;
@@ -118,9 +122,8 @@ button {
 /* ComingSoon */
 .soon {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .soon h3 {

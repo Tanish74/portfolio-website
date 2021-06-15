@@ -16,9 +16,9 @@ const Landing = () => {
             delay={1800}
             className='lead'
           >
-            The Quick, Brown Fox Jumps Over A Lazy Dog. Djs Flock By When MTV Ax
-            Quiz Prog. Junk MTV Quiz Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Totam, ut.
+            I'm Tanish Vemu a 20-year-old Computer Science student who enjoys
+            Designing and Developing websites. Welcome to my portfolio, scroll
+            down to see my work and know more about me.
           </ScrollAnimation>
           {/* <ScrollAnimation
             animateIn='animate__fadeIn'
