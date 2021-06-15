@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "../CSS/Projects.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 import MediBond from "../Images/1.jpeg";
+import Nivaas from "../Images/Nivaas.png";
 
 const Projects = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className='projects'>
       <ScrollAnimation
@@ -70,7 +74,7 @@ const Projects = () => {
                 animateOnce={true}
                 className='overlay'
               >
-                <img src={MediBond} alt='Medibond...' />
+                <img src={Nivaas} alt='Medibond...' />
               </ScrollAnimation>
             </div>
           </div>
@@ -84,7 +88,6 @@ const Projects = () => {
               <div className='project-tools'>
                 <i class='fab fa-react fa-3x m-2'></i>
                 <i class='fab fa-html5 fa-3x m-2'></i>
-                <i class='fab fa-css3-alt fa-3x m-2'></i>
               </div>
               <div className='project-links'>
                 <a href='/'>

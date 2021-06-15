@@ -114,3 +114,25 @@ textarea {
 button {
   height: 60px;
 }
+
+/* ComingSoon */
+.soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.soon h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.soon p {
+  color: #53cde9;
+  font-family: "Kaushan script", cursive;
+  text-transform: capitalize;
+  text-shadow: 0px 0px 44px #4bc0d9;
+  font-size: 3rem;
+}

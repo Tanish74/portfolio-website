@@ -6,6 +6,7 @@ import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 import Work from "./Components/Work";
 import Contact from "./Components/Contact";
+import ComingSoon from "./Components/Pages/ComingSoon";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SocialFooter from "./Components/SocialFooter";
 import { Fragment } from "react";
@@ -32,6 +33,7 @@ function App() {
 
           <Route exact path='/projects' component={Projects} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/coming-soon' component={ComingSoon} />
         </Switch>
 
         <SocialFooter />

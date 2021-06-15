@@ -6,10 +6,21 @@ const SocialFooter = () => {
     <footer className='social-footer'>
       <div className='social-icons container'>
         <div className='social'>
-          <i class='fab fa-linkedin-in' />
-          <i class='fas fa-envelope' />
-          <i class='fab fa-whatsapp' />
-          <i class='fab fa-github ' />
+          <a
+            href='https://www.linkedin.com/in/tanish-vemu-611059184/'
+            class='fab fa-linkedin-in'
+          >
+            {" "}
+          </a>
+          <a href='mailto: www.vtani74@gmail.com' class='fas fa-envelope'>
+            {" "}
+          </a>
+          <a href='https://wa.me/917898370358' class='fab fa-whatsapp'>
+            {" "}
+          </a>
+          <a href='https://github.com/tanish74' class='fab fa-github '>
+            {" "}
+          </a>
         </div>
       </div>
       <div className='trademark'>

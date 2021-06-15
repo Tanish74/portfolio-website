@@ -160,6 +160,22 @@
   color: #139fda;
 }
 
+.xd-logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+}
+
+.xd:hover {
+  background: #450135;
+  color: #f75eee;
+}
+
+.photoshop:hover {
+  background: #001d34;
+  color: #2fa4f7;
+}
+
 .more-projects {
   position: relative;
   height: 250px;

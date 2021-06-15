@@ -1,7 +1,10 @@
-import React from "react";
+import { React, useLayoutEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Contact = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className='contact'>
       <div className='contact-bg container'>

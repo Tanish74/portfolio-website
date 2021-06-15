@@ -1,5 +1,6 @@
 import React from "react";
 import MediBond from "./Images/1.jpeg";
+import Nivaas from "./Images/Nivaas.png";
 import "./CSS/Work.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
@@ -52,7 +53,7 @@ const Work = () => {
             animateOnce={true}
             className='carousel C-right'
           >
-            <img src={MediBond} alt='MediBond...' />
+            <img src={Nivaas} alt='MediBond...' />
             <div className='project-name'>
               <h1>Nivaas</h1>
               <div className='underline-2' />
@@ -61,20 +62,20 @@ const Work = () => {
           </ScrollAnimation>
           <div className='underline-1 mtb-20' />
           <div className='info'>
-            <div className='icon-container react'>
-              <i class='fab fa-react fa-3x tools'></i>
+            <div className='icon-container photoshop'>
+              <i class='fab tools xd-logo'>Ps</i>
             </div>
-            <div className='icon-container html'>
-              <i class='fab fa-html5 fa-3x tools'></i>
-            </div>
-            <div className='icon-container css'>
-              <i class='fab fa-css3-alt fa-3x tools'></i>
+            <div className='icon-container xd'>
+              <i class='fab tools xd-logo'>Xd</i>
             </div>
           </div>
         </div>
       </div>
       <div className='more-projects'>
-        <Link to='/projects'> &gt; More Projects &lt; </Link>
+        <Link to='/projects' className='link-moreProjects'>
+          {" "}
+          &gt; More Projects &lt;{" "}
+        </Link>
       </div>
     </div>
   );
