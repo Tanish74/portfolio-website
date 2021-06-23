@@ -40,7 +40,6 @@
 
 .project-container {
   height: 100%;
-
   position: relative;
 }
 
@@ -195,12 +194,82 @@
   }
   .background .bg {
     top: 40%;
-    left: 50%;
+    left: 55%;
+    width: 100%;
     transform: translate(-50%, -40%);
   }
   .background .fg {
-    top: 50%;
-    left: 50%;
+    top: 46%;
+    left: 55%;
+    width: 100%;
     transform: translate(-50%, -50%);
+  }
+  .project-container {
+    height: 350px;
+    width: 300px;
+  }
+
+  .project-image {
+    width: auto;
+    transform: scale(0.7);
+  }
+
+  .project-desc {
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    top: 60%;
+    left: 7%;
+    transform: translate(0, -30%);
+  }
+
+  .project-desc p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .project-title {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    font-size: 2.5rem;
+    font-family: "Kaushan script", cursive;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 1);
+    user-select: none;
+  }
+
+  .project-tools {
+    left: 25%;
+    font-size: 10px;
+  }
+
+  .project-links {
+    left: 50%;
+    font-size: 10px;
+  }
+
+  /* Contact Page */
+  .page-title {
+    top: 10%;
+    left: 5%;
+  }
+  .title-text {
+    font-size: 3rem;
+  }
+
+  .contact-form {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: -2.5%;
+    display: grid;
+    place-items: center;
+  }
+
+  .form {
+    height: auto;
+    width: 100%;
+    transform: scale(0.8);
   }
 }
