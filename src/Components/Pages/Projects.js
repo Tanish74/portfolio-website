@@ -2,8 +2,10 @@ import React, { useLayoutEffect } from "react";
 import "../CSS/Projects.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
-import MediBond from "../Images/1.jpeg";
+import QuickPharm from "../Images/QuickPharm.png";
 import Nivaas from "../Images/Nivaas.png";
+import Squad from "../Images/Squad.png";
+import Shortly from "../Images/Shortly.png";
 
 const Projects = () => {
   useLayoutEffect(() => {
@@ -28,7 +30,7 @@ const Projects = () => {
                 animateOnce={true}
                 className='overlay'
               >
-                <img src={MediBond} alt='Medibond...' />
+                <img src={QuickPharm} alt='Medibond...' />
               </ScrollAnimation>
             </div>
           </div>
@@ -61,7 +63,7 @@ const Projects = () => {
             delay={500}
             className='project-title'
           >
-            MediBond
+            QuickPharm
           </ScrollAnimation>
         </div>
       </section>
@@ -118,14 +120,14 @@ const Projects = () => {
                 animateOnce={true}
                 className='overlay'
               >
-                <img src={MediBond} alt='Medibond...' />
+                <img src={Squad} alt='Medibond...' />
               </ScrollAnimation>
             </div>
           </div>
           <div className='project-desc'>
             <div className='description'>
               <p className='lead text-dark'>
-                UI/UX of a housing management application
+                A Team Building and Management App for coaches
               </p>
             </div>
             <div>
@@ -150,7 +152,7 @@ const Projects = () => {
             delay={500}
             className='project-title'
           >
-            Nivaas App
+            Squad
           </ScrollAnimation>
         </div>
       </section>
@@ -163,14 +165,14 @@ const Projects = () => {
                 animateOnce={true}
                 className='overlay'
               >
-                <img src={MediBond} alt='Medibond...' />
+                <img src={Shortly} alt='Medibond...' />
               </ScrollAnimation>
             </div>
           </div>
           <div className='project-desc'>
             <div className='description'>
               <p className='lead text-dark'>
-                UI/UX of a housing management application
+                A Simple Link shortener app built on shrtcode.api
               </p>
             </div>
             <div>
@@ -195,7 +197,7 @@ const Projects = () => {
             delay={500}
             className='project-title'
           >
-            Nivaas App
+            Shortly
           </ScrollAnimation>
         </div>
       </section>

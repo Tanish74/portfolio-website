@@ -1,16 +1,10 @@
 {
-    "editor.wordWrap": "on",
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "editor.fontSize": 17,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "cSpell.words": [
-        "Medi",
-        "Medibond",
-        "Nivaas",
-        "linkedin",
-        "whatsapp"
-    ]
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": ["Medi", "Medibond", "Nivaas", "linkedin", "whatsapp"]
 }
