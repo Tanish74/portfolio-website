@@ -21,10 +21,11 @@ const Footer = () => {
               <h1>I'm Tanish Vemu</h1>
               <div className='underline-2 mtb-20' />
               <p className='lead'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus soluta aperiam magnam est quas iste nam, cumque
-                pariatur ducimus officia nesciunt omnis quod laudantium fugiat
-                impedit earum quibusdam amet ratione?
+                I am currently in SRM Institute of Science and Technology, I am
+                currently pursuing my b.tech in computer science and
+                engineering. I always had an interest in design in general and
+                through which I came across web development and I started
+                learning it along with Ui/Ux design.
               </p>
             </div>
           </div>
